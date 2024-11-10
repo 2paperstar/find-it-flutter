@@ -5,7 +5,7 @@ import 'package:find_it/app/router.gr.dart';
 class FindItRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
-        RedirectRoute(path: '/', redirectTo: '/splash'),
+        AutoRoute(path: '/', page: MainRoute.page),
         AutoRoute(path: '/splash', page: SplashRoute.page),
         AutoRoute(path: '/login', page: LoginRoute.page),
       ];
